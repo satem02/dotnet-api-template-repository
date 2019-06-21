@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  api:
+    image: testapi
+    build:
+      context: ./src
+      dockerfile: api/Dockerfile
+    container_name: "api"
+    ports:
+     - 80:80
+    environment: 
+     - ASPNETCORE_ENVIRONMENT=Production
