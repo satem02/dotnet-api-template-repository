@@ -8,6 +8,6 @@ services:
       dockerfile: api/Dockerfile
     container_name: "api"
     ports:
-     - 80:80
+     - $PORT:80
     environment: 
      - ASPNETCORE_ENVIRONMENT=Production
