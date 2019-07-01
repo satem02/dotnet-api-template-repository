@@ -1,12 +1,12 @@
 version: '3.4'
 
 services:
-  api:
-    image: testapi
+  apitemplate:
+    image: apitemplate
     build:
       context: ./src
       dockerfile: api/Dockerfile
-    container_name: "api"
+    container_name: "apitemplate"
     ports:
      - $PORT:80
     environment: 
